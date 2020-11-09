@@ -1,5 +1,5 @@
 <h2>Angular super heroes</h2>
 <div class="heros-app">
-  <jsh-hero-list></jsh-hero-list>
-  <jsh-edit-hero></jsh-edit-hero> <!-- componenta adaugata -->
+  <jsh-hero-list (heroSelected)="setEditHero($event)"></jsh-hero-list>
+  <jsh-edit-hero *ngIf="selectedHeroForEdit" [heroId] = "selectedHeroForEdit" (close)="closeEdit()"></jsh-edit-hero> <!-- componenta adaugata -->
 </div>
