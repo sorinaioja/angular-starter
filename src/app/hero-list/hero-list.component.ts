@@ -20,6 +20,8 @@ export class HeroListComponent implements OnInit {
     this.heros = this.heroService.heros;
     this.myString = 'revnoeibvoeihrviheovoheroERVDFVsdcaecRV';
   }
-
+  editHandler(id) {
+    alert(id);
+  }
 
 }
